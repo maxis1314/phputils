@@ -9,6 +9,7 @@ define('ERROR',99);
 function get_db_config($type_name="default"){
 	$db_config = array(
         "default" => array("localhost","root", "", "test", 'utf8'),       
+        "python" => array("localhost","root", "", "python", 'utf8'),    
     );
 	return $db_config[$type_name];
 }
