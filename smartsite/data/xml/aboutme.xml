@@ -1,0 +1,153 @@
+<?xml version='1.0'?> 
+<document>
+<title>问卷调查</title>
+<postback></postback>
+<sendmail>yes</sendmail>
+<mailto></mailto>
+ <form>
+ 	<field>
+ 		<display>您贵姓</display>
+ 		<name>n</name>
+		<htmlgenerator>
+			<name>HiddenGenerator</name>			
+		</htmlgenerator>
+		<valids>			
+		</valids>
+		<error>请输入2-30个字符</error>
+	</field>
+	
+	<field>
+ 		<display>您最喜欢的一本书</display>
+ 		<name>name</name>
+		<htmlgenerator>
+			<name>InputTextGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>LengthValidate</name>
+				<param1>2</param1>
+				<param2>30</param2>
+			</valid>
+		</valids>
+		<error>请输入2-30个字符</error>
+	</field>
+	
+	<field>
+ 		<display>您最喜欢的一个人</display>
+ 		<name>name</name>
+		<htmlgenerator>
+			<name>InputTextGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>LengthValidate</name>
+				<param1>2</param1>
+				<param2>30</param2>
+			</valid>
+		</valids>
+		<error>请输入2-30个字符</error>
+	</field>
+	
+	<field>
+ 		<display>您最喜欢的一部电影</display>
+ 		<name>name</name>
+		<htmlgenerator>
+			<name>InputTextGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>LengthValidate</name>
+				<param1>2</param1>
+				<param2>30</param2>
+			</valid>
+		</valids>
+		<error>请输入2-30个字符</error>
+	</field>
+	
+	<field>
+ 		<display>您对现实生活的满意程度</display>
+ 		<name>sex</name>
+		<htmlgenerator>
+			<name>RadioboxGenerator</name>
+			<param1>非常满意,很满意,一般,有点不满意,非常不满意</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>NotNullValidate</name>
+				<param1>1</param1>
+			</valid>
+		</valids>
+		<error>请选择</error>
+	</field>
+	
+	<field>
+ 		<display>最喜欢的语言</display>
+ 		<name>country</name>
+		<htmlgenerator>
+			<name>SelectGenerator</name>
+			<param1>中文,英文,日文,德文,法文,其他</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>NotNullValidate</name>
+				<param1>1</param1>
+			</valid>
+		</valids>
+		<error>请作答</error>
+	</field>	
+	
+	<field>
+ 		<display>兴趣</display>
+ 		<name>like</name>
+		<htmlgenerator>
+			<name>CheckboxGenerator</name>
+			<param1>文学,上网,电影,游戏,旅游,沟通,无线,学习,科学,音乐,舞蹈,健身,探索,休闲,食品,种植,收集,模型玩具,照片,工艺美术品,自助,摩托车,汽车,交通运输</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>NotNullValidate</name>
+				<param1>10</param1>
+				<param2>30</param2>
+			</valid>
+		</valids>
+		<error>请选择</error>
+	</field>
+	
+	<field>
+ 		<display>最想做的事情</display>
+ 		<name>content</name>
+		<htmlgenerator>
+			<name>TextareaGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>LengthValidate</name>
+				<param1>0</param1>
+				<param2>300</param2>
+			</valid>
+		</valids>
+		<error></error>
+	</field>
+	
+	<field>
+ 		<display>您不是机器人吧</display>
+ 		<name>authpic</name>
+		<htmlgenerator>
+			<name>AuthPicGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>AuthPicValidate</name>
+				<param1>1</param1>				
+			</valid>
+		</valids>
+		<error>请输入图片中的文字</error>
+	</field>
+	
+ </form>
+</document>

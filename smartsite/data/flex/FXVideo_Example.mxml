@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:controls="com.fxcomponents.controls.*" 
+	backgroundColor="#444444" themeColor="#628CAF" backgroundGradientAlphas="{[0, 0]}"  creationComplete="initVars()">
+	<mx:Script>
+		<![CDATA[
+			
+			[Bindable]
+     			public var myName:String;
+
+			[Bindable]			
+			private var source:String;
+
+			private function initVars():void {
+		        	myName = Application.application.parameters.var1;
+		       		source = "http://wx.mim1314.com/data/flv/4gHgtedh9_376U/"+myName+".flv";
+		     	}
+
+			
+			]]>
+	</mx:Script>
+	<controls:FXVideo width="480" height="360" source="{source}" autoPlay="false" bufferTime="10" />
+</mx:Application>

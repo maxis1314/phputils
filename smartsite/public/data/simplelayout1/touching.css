@@ -1,0 +1,65 @@
+/* *** css by miss monorom www.intensivstation.ch *** */
+/* css released under Creative Commons License -  http://creativecommons.org/licenses/by/2.0/deed.en  */
+
+
+
+
+
+/* ----------container to center the layout-------------- */
+#container {
+width: 120%;
+
+margin-left: auto;
+margin-right: auto;
+height:100%;
+background: #E8E8E8 url('menubottom.jpg') no-repeat bottom left;
+border:1px solid #8D8D8D;
+}
+
+/* ----------banner for logo-------------- */
+#banner {
+height:114px;
+text-align: center;
+background:  url('header.jpg') no-repeat bottom center;
+background-color: #e1ddd9;
+
+padding: 0px;
+margin: 0px;
+}
+#banner img {padding:10px 0px;} 
+#bannertitle{padding-top:50px;font-size:2em;font-weight:bold;}
+
+/* -----------------content--------------------- */
+#content {
+
+background:#ffffff  url('content.jpg') no-repeat top right;
+padding: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}
+div#content { 
+min-height:600px;
+/*height:expression(this.scrollHeight > 600 ? "auto":"600px"); */
+}
+
+
+
+/* -----------footer--------------------------- */
+#footer {
+clear: both;
+margin: 0px;
+padding:0px;
+
+height:35px;
+text-align: right; 
+background:  url('footer.gif') repeat-x ;
+}
+ #footer h1 a{
+ color:#FFFFFF;
+ }
+  #footer h1{
+  padding:5px 5px 0px 0px;
+  }
+ /**********vertical menu***************/
+
+

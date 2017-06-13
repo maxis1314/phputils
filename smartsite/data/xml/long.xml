@@ -1,0 +1,30 @@
+<?xml version='1.0'?> 
+<document>
+<title>ログイン/Login Form</title>
+<postback></postback>
+<postbackjp>http://mim1314.com/php/login.php</postbackjp>
+<sendmail>yes</sendmail>
+<md5seed>1234</md5seed>
+<confirm>yes</confirm>
+ <form> 	
+	<field>
+ 		<display>111</display>
+ 		<name></name>
+		<htmlgenerator>
+			<name>InputTextGenerator</name>
+			<param1></param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>NotNullValidate</name>
+				<param1>1</param1>
+			</valid>
+		</valids>
+		<errorjp>メールアドレスが間違っています</errorjp>
+	</field>
+
+
+	
+	
+ </form>
+</document>

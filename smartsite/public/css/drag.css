@@ -1,0 +1,67 @@
+body {
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	color: #002;
+	padding: 0;
+	margin: 20px;
+	}
+code {
+	display: block;
+	background: #F9F9F9;
+	border: 1px dashed #ABC;
+	font: 12px/16px "Courier New", Courier, monospace;
+	padding: 10px;
+	margin: 0 0 30px 0;
+	white-space: pre;
+	float: left;
+	}
+.str { color: #00A; }
+.kwd { color: #808; }
+.com { color: #777; }
+.typ { color: #088; }
+.lit { color: #800; }
+.pun { color: #000; }
+.pln { color: #002; }
+.tag { color: #008; }
+.atn { color: #606; }
+.atv { color: #080; }
+.dec { color: #606; }
+p { margin: 0 0 5px 0; }
+.box {
+		
+	text-align: left;		
+	}	
+
+.drag {	
+	cursor: move;	
+	text-align: left;
+	}
+.drop .drag {
+		display:none
+	}
+.drop {
+
+
+	}	
+.ghost {
+	position: absolute;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	background-color: #CCF;
+	border-color: #AAD;
+	color: #AAD;
+	}
+.outline {
+	background-color: #FCC;
+	border-color: #DAA;
+	border-style: dashed;
+	color: #DAA;
+	}
+.active {
+	background-color: #CFC;
+	border-color: #ADA;
+	}
+#nodrop {
+	height: 120px;
+	}
+

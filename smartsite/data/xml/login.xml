@@ -1,0 +1,41 @@
+<?xml version='1.0'?> 
+<document>
+<title>ログイン/Login Form</title>
+<postback>/quick/login</postback>
+<postbackjp>http://mim1314.com/php/login.php</postbackjp>
+<sendmail>no</sendmail>
+ <form> 	
+	<field>
+ 		<display>メールアドレス/Email</display>
+ 		<name>name</name>
+		<htmlgenerator>
+			<name>InputTextGenerator</name>
+			<param1></param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>EmailValidate</name>
+				<param1>1</param1>
+			</valid>
+		</valids>
+		<errorjp>メールアドレスが間違っています</errorjp>
+	</field>
+	
+	<field>
+ 		<display>パスワード/Password</display>
+ 		<name>pass</name>
+		<htmlgenerator>
+			<name>PasswordInputGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>NotNullValidate</name>
+				<param1>1</param1>
+			</valid>
+		</valids>
+		<errorjp>パスワードを入力してください</errorjp>
+	</field>
+	
+ </form>
+</document>

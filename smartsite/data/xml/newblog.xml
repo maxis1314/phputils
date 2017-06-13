@@ -1,0 +1,61 @@
+<?xml version='1.0'?> 
+<document>
+<title>新規/New Blog</title>
+<postback>/quick/newblog</postback>
+<postbackjp>http://mim1314.com/php/somewords.php</postbackjp>
+<sendmail>no</sendmail>
+<mailto></mailto>
+<confirm>yes</confirm>
+ <form>
+ 	<field>
+ 		<display>タイトル/Title</display>
+ 		<name>title</name>
+		<htmlgenerator>
+			<name>InputTextGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>LengthValidate</name>
+				<param1>2</param1>
+				<param2>30</param2>
+			</valid>
+		</valids>
+		<errorjp>タイトルの長さは２～３０です</errorjp>
+	</field>
+	
+	<field>
+ 		<display>詳細/Content</display>
+ 		<name>content</name>
+		<htmlgenerator>
+			<name>TextareaGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>LengthValidate</name>
+				<param1>10</param1>
+				<param2>300</param2>
+			</valid>
+		</valids>
+		<errorjp>詳細を書いてください</errorjp>
+	</field>	
+	
+	<field>
+ 		<display>画像承認/Authentication</display>
+ 		<name>authpic</name>
+		<htmlgenerator>
+			<name>AuthPicGenerator</name>
+			<param1>1</param1>
+		</htmlgenerator>
+		<valids>
+			<valid>
+				<name>AuthPicValidate</name>
+				<param1>1</param1>				
+			</valid>
+		</valids>
+		<errorjp>画像中の文字を入力してください</errorjp>
+	</field>
+	
+ </form>
+</document>

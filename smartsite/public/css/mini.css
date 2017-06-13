@@ -1,0 +1,103 @@
+.page{padding:2px;font-weight:bolder;font-size:12px;}
+.page a{border:1px solid #ccc;padding:0 5px 0 5px;margin:2px;text-decoration:none;color:#333;}
+.page span{padding:0 5px 0 5px;margin:2px;background:#09f;color:#fff;border:1px solid #09c;}
+
+
+.wikiblock{
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: #ddddee;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #888899;
+border-left-width: 1px;
+border-left-style: solid;
+border-left-color: #ddddee;
+border-left-width-ltr-source: physical;
+border-left-width-rtl-source: physical;
+border-left-style-ltr-source: physical;
+border-left-style-rtl-source: physical;
+border-left-color-ltr-source: physical;
+border-left-color-rtl-source: physical;
+border-right-width: 1px;
+border-right-style: solid;
+border-right-color: #888899;
+border-right-width-ltr-source: physical;
+border-right-width-rtl-source: physical;
+border-right-style-ltr-source: physical;
+border-right-style-rtl-source: physical;
+border-right-color-ltr-source: physical;
+border-right-color-rtl-source: physical;
+padding-top: 0.5em;
+padding-right: 0.5em;
+padding-bottom: 0.5em;
+padding-left: 0.1em;
+margin-top: 0.3em;
+margin-left: 0.1em;
+margin-right: 2em;
+color: black;
+background-color: #f0f8ff;
+}
+
+
+a.button{
+	float:left;
+	background:url(/public/images/link/button.gif);
+	display:block;
+	color:#555555;
+	font-weight:bold;
+	height:30px;
+	line-height:29px;
+	margin-bottom:14px;
+	margin-right:5px;
+	text-decoration:none;
+	width:135px;
+}
+a:hover.button{
+	color:#0066CC;
+}
+
+/* -------------------- */
+/* CLASSES				*/
+/* -------------------- */
+.add{
+	background:url(/public/images/link/add.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
+.delete{
+	background:url(/public/images/link/delete.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
+.user{
+	background:url(/public/images/link/user.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
+.alert{
+	background:url(/public/images/link/alert.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
+.msg{
+	background:url(/public/images/link/msg.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
+.download{
+	background:url(/public/images/link/download.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
+
+.lens{
+	background:url(/public/images/link/lens.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
+.info{
+	background:url(/public/images/link/info.gif) no-repeat 10px 8px;
+	text-indent:30px;
+	display:block;
+}
