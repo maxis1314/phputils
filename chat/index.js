@@ -112,8 +112,8 @@ io.sockets.on('connection', function (socket)
     //监听reids
     redis_obj.on("message", function(id, msg)
     {
-        var mobj = JSON.parse(msg);
-        console.log(mobj);
+        console.log("redis.event:"+msg);
+        var mobj = JSON.parse(msg);        
         switch(mobj.type){
             case 'message':
                 socket.emit('message', msg);
