@@ -66,6 +66,7 @@ io.sockets.on('connection', function (socket)
         socket.forbidden_talk_time = config.app.forbidden_talk_time || 180;
         socket.return_list_num = config.app.return_list_num || 100;        
         //判断是否已被踢出
+        console.log('dd:'+socket.online_list)
         msg_sender.get(socket.kick_out + socket.user_name, function(err, reply) {
             console.log(err)
             console.log(reply)
@@ -248,7 +249,7 @@ io.sockets.on('connection', function (socket)
     {
         console.log('disconnect')
         //删除退出的用户信息
-        msg_sender.zrem(socket.online_list, socket.json_info, function(data){});
+        msg_sender.zrem(socket.online_list, socket.json_info, function(data){console.log(data)});
         // //刷新列表
         var info = {};
         info.type = 'quit';        

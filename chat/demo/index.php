@@ -2,7 +2,7 @@
 <?php $rid = @$_REQUEST['r'] ? @$_REQUEST['r'] : 123;?>
 
 <?php echo '第'. $rid. '直播室<br>'; echo $user_name;?>
-  <a href=http://localhost/chat/demo/# target=_blank>new</a>
+  <a href=http://localhost:81/phputils/chat/demo/# target=_blank>new</a>
 <html>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <head>
