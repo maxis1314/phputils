@@ -13,8 +13,7 @@
             .name {color:#E93CA6;text-decoration: none;}
         </style>
 
-        <script>
-
+        <script>    
             $(function(){
 
                 var socket = io.connect('http://127.0.0.1',{port:8081});

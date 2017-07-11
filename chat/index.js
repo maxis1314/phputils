@@ -66,7 +66,8 @@ io.sockets.on('connection', function (socket)
         socket.forbidden_talk_time = config.app.forbidden_talk_time || 180;
         socket.return_list_num = config.app.return_list_num || 100;        
         //判断是否已被踢出
-        console.log('dd:'+socket.online_list)
+        console.log('online_list:'+socket.online_list)
+        console.log('forbidden_talk:'+socket.forbidden_talk)
         msg_sender.get(socket.kick_out + socket.user_name, function(err, reply) {
             console.log(err)
             console.log(reply)
