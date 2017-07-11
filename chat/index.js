@@ -106,7 +106,9 @@ io.sockets.on('connection', function (socket)
     {
         msg_sender.zrevrange(socket.online_list, 0, socket.return_list_num, function(error, reply){
             socket.emit('online_list', reply);
+            console.log(reply);
         });
+        
     }
 
     //监听reids
@@ -117,6 +119,9 @@ io.sockets.on('connection', function (socket)
         switch(mobj.type){
             case 'message':
                 socket.emit('message', msg);
+                break;
+            case 'refresh':
+                onlineList();                
                 break;
             case 'welcome':
                 socket.emit('welcome', msg);

@@ -20,7 +20,7 @@
                 var socket = io.connect('http://127.0.0.1',{port:8081});
                 var r_id = <?php echo $rid; ?> //房间ID
                 var user_name = <?php echo $user_name; ?> //用户ID
-                var nick_name = user_name + '凤';
+                var nick_name = user_name + '-san';
                 var level = user_name;
                 // var info = {"user_name":$("#erfdf").val(),"r_id":r_id,"nick_name":nick_name,"level":level};
                 var info = {"user_name":user_name,"r_id":r_id,"nick_name":nick_name,"level":level};
